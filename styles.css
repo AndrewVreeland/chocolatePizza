@@ -1,0 +1,194 @@
+body{
+  margin: 2% 0% 0% 25%;
+  
+}
+  header{
+  display: flex;
+  justify-content: space-between;
+  width:max-content;
+  margin-bottom: 4%;
+  
+}
+#leftSide{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#headerText{
+  margin-left: 3%;
+  min-width: 100%;
+  padding-right: 130px;
+}
+h3{
+font-weight: bold;
+font-size: 300%;
+}
+#itallicHeader{
+color: black;
+font-size:75%
+}
+#datePosted{
+color: lightgrey;
+}
+#chocoPizza{
+  font-size: 350%;
+  font-weight: bolder ;
+}
+#chocoPizzaContainer{
+  display: flex;
+  margin-bottom: 2%;
+}
+#print{
+  height: min-content;
+}
+
+#imageIcons{
+  display: flex;
+
+  height: min-content;
+  margin-left: 56.5%
+}
+
+.img{
+  margin-left: 1.5%;
+  margin-top: 3%;
+}
+.img:hover{
+  scale: 1.1 ;
+  cursor: pointer;
+}
+#rss{
+  margin-left: 3%;
+  margin-top: 3%;
+}
+#rss:hover{
+  scale: 1.1 ;
+  cursor: pointer;
+}
+
+#printContainer{
+  display: flex;
+  margin-left: 26%;
+  margin-top: 2.8%;
+}
+
+#printContainer:hover{
+  scale: 1.1 ;
+  cursor: pointer;
+}
+
+#printText{
+  color: lightgray;
+  font-size: 85%;
+}
+
+#notes{
+  margin-left: 0%;
+} 
+#listBG{
+  background-image: url(imgs/list-bg.png);
+  height: 300px;
+  /* width: auto; */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+}
+
+.container{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 13%;
+}
+#item1{
+  margin-top: 33%;
+}
+.container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  
+}
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid black;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid rgb(97, 96, 96);
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bodyText{
+  margin-top: 1.5%;
+  text-align: left;
+  font-style: normal;
+  word-wrap: break-word;
+  width: 900px;
+  text-indent: 3%;
+  line-height: 150%;
+}
+#lastPara{
+  margin-bottom: 4%;
+}
+#name{
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+#nameText{
+width: 500px;
+}
+#shareButton{
+background-color: rgb(255, 102, 0);
+color: white;
+max-width: 140px;
+contain: content;
+text-align: center;
+padding: 15px;
+height: 15px;
+}
+
+#shareButton:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+#footerMain{
+display: flex;
+padding-top: 50px;
+}
+#footerText{
+  margin: 0% 1.5% 10% 1.5%;
+}
